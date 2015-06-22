@@ -1,11 +1,11 @@
 {
-	"description": "sorting code bricks for JavaScript",
+	"description": "partition code bricks for JavaScript",
 	"version": "5.0.4",
-	"repo": "aureooms/js-sort",
+	"repo": "aureooms/js-partition",
 	"scripts": [
-		"js/dist/sort.js"
+		"js/dist/partition.js"
 	],
-	"name": "aureooms-js-sort",
+	"name": "aureooms-js-partition",
 	"license": "AGPL-3.0",
-	"main": "js/dist/sort.js"
+	"main": "js/dist/partition.js"
 }
