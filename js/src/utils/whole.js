@@ -1,10 +1,10 @@
 
 
-var whole = function ( sort ) {
+var whole = function ( partition ) {
 
 	return function ( compare, array ) {
 
-		sort( compare, array, 0, array.length );
+		return partition( compare, array, 0, array.length );
 
 	};
 

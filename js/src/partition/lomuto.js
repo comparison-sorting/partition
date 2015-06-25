@@ -1,4 +1,7 @@
 
+/**
+ * HYP : i < j
+ */
 
 var lomuto = function ( compare, a, i, j ) {
 
