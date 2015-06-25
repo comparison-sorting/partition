@@ -1,40 +1,43 @@
 {
-	"author": "aureooms",
-	"scripts": {
-		"doc": "./node_modules/.bin/groc",
-		"build": "./node_modules/.bin/aureooms-node-package-build",
-		"test": "./node_modules/.bin/aureooms-node-package-test"
-	},
-	"devDependencies": {
-		"aureooms-node-package": "^4.2.5",
-		"aureooms-js-itertools": "^1.1.2",
-		"aureooms-js-functools": "^2.0.3",
-		"aureooms-js-compare": "^1.4.4",
-		"aureooms-js-random": "^1.0.2",
-		"aureooms-js-array": "^2.2.1"
-	},
-	"main": "js/dist/partition.js",
-	"bugs": {
-		"url": "https://github.com/aureooms/js-partition/issues"
-	},
-	"license": "AGPL-3.0",
-	"homepage": "http://aureooms.github.io/js-partition/",
-	"description": "partition code bricks for JavaScript",
-	"dependencies": {},
-	"keywords": [
-		"bricks",
-		"ender",
-		"hoare",
-		"javascript",
-		"js",
-		"lomuto",
-		"partition",
-		"yaroslavskiy"
-	],
-	"name": "aureooms-js-partition",
-	"repository": {
-		"url": "https://github.com/aureooms/js-partition.git",
-		"type": "git"
-	},
-	"version": "6.0.0"
+  "author": "aureooms",
+  "scripts": {
+    "doc": "./node_modules/.bin/groc",
+    "build": "./node_modules/.bin/aureooms-node-package-build",
+    "test": "./node_modules/.bin/aureooms-node-package-test"
+  },
+  "devDependencies": {
+    "aureooms-node-package": "^4.2.5",
+    "aureooms-js-itertools": "^1.1.2",
+    "aureooms-js-functools": "^2.0.3",
+    "aureooms-js-compare": "^1.4.4",
+    "aureooms-js-random": "^1.0.2",
+    "aureooms-js-array": "^2.2.1"
+  },
+  "main": "js/dist/partition.js",
+  "bugs": {
+    "url": "https://github.com/aureooms/js-partition/issues"
+  },
+  "license": "AGPL-3.0",
+  "homepage": "http://aureooms.github.io/js-partition/",
+  "description": "partition code bricks for JavaScript",
+  "dependencies": {},
+  "keywords": [
+    "bricks",
+    "ender",
+    "hoare",
+    "javascript",
+    "js",
+    "lomuto",
+    "partition",
+    "yaroslavskiy"
+  ],
+  "name": "aureooms-js-partition",
+  "repository": {
+    "url": "https://github.com/aureooms/js-partition.git",
+    "type": "git"
+  },
+  "version": "6.0.0",
+  "spm": {
+    "main": "js/dist/partition.js"
+  }
 }

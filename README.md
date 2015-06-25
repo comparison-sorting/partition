@@ -1,7 +1,11 @@
 [js-partition](http://aureooms.github.io/js-partition)
 ==
 
-Sorting code bricks for JavaScript.
+Partitioning code bricks for JavaScript.
+
+```js
+let pivot = partition.hoare( compare.increasing , array , left , right ) ;
+```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-partition.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-partition/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-partition.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-partition)
@@ -15,54 +19,106 @@ Sorting code bricks for JavaScript.
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-partition.svg?style=flat)](https://github.com/aureooms/js-partition/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-partition.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-partition)
 
-Can be managed through [duo](https://github.com/duojs/duo),
-[component](https://github.com/componentjs/component),
-[bower](https://github.com/bower/bower), or
-[npm](https://github.com/npm/npm).
 
-```js
-let sort = require( "aureooms-js-partition" ) ;
+Can be managed through [jspm](https://github.com/jspm/jspm-cli),
+[duo](https://github.com/duojs/duo),
+[component](https://github.com/componentjs/component),
+[bower](https://github.com/bower/bower),
+[ender](https://github.com/ender-js/Ender),
+[jam](https://github.com/caolan/jam),
+[spm](https://github.com/spmjs/spm),
+and [npm](https://github.com/npm/npm).
+
+## Install
+
+### jspm
+```terminal
+jspm install github:aureooms/js-partition
+# or
+jspm install npm:aureooms-js-partition
 ```
+### duo
+No install step needed for duo!
+
+### component
+```terminal
+component install aureooms/js-partition
+```
+
+### bower
+```terminal
+bower install aureooms-js-partition
+```
+
+### ender
+```terminal
+ender add aureooms-js-partition
+```
+
+### jam
+```terminal
+jam install aureooms-js-partition
+```
+
+### spm
+```terminal
+spm install aureooms-js-partition --save
+```
+
+### npm
+```terminal
+npm install aureooms-js-partition --save
+```
+
+## Require
+### jspm
+```js
+let partition = require( "github:aureooms/js-partition" ) ;
+// or
+import partition from 'aureooms-js-partition' ;
+```
+### duo
+```js
+let partition = require( "aureooms/js-partition" ) ;
+```
+
+### component, ender, spm, npm
+```js
+let partition = require( "aureooms-js-partition" ) ;
+```
+
+### bower
+The script tag exposes the global variable `partition`.
+```html
+<script src="bower_components/aureooms-js-partition/js/dist/partition.min.js"></script>
+```
+Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/).
+
+### jam
+```js
+require( [ "aureooms-js-partition" ] , function ( partition ) { ... } ) ;
+```
+
 
 ## Use
 
 ```js
 let compare = require( "aureooms-js-compare" ) ;
 
-/** quicksort using hoare partitioning */
-let quicksort = sort.__quicksort__( sort.hoare ) ;
-
-let a = [ 1 , 6 , 5 , 3 , 2 , 4 ] ;
-
-quicksort( compare.increasing , a , 0 , a.length ) ;
-
-a ; // [ 1 , 2 , 3 , 4 , 5 , 6 ]
-
-quicksort( compare.decreasing , a , 0 , a.length ) ;
-
-a ; // [ 6 , 5 , 4 , 3 , 2 , 1 ]
+/** hoare partitioning */
+let array = [ 3 , 4 , 1 , 9 , 0 ] ;
+let pivot = partition.hoare( compare.increasing , array , 0 , array.length ) ;
+pivot ; // 2
+array ; // [ 1 , 0 , 3 , 9 , 4 ]
 
 // but also
 
-/** binary heapsort */
-let heapsort = sort.__heapsort__( 2 ) ;
-/** ternary heapsort */
-let heapsort = sort.__heapsort__( 3 ) ;
-/** quicksort (lomuto) */
-let quicksort = sort.__quicksort__( sort.lomuto ) ;
-/** dualpivotquicksort (yaroslavskiy) */
-let quicksort = sort.__dualpivotquicksort__( sort.yaroslavskiy ) ;
-/** insertionsort */
-let insertionsort = sort.insertionsort ;
-/** selectionsort */
-let selectionsort = sort.selectionsort ;
-/** bubblesort */
-let bubblesort = sort.bubblesort ;
+/** lomuto partitioning */
+partition.lomuto ;
+/** yaroslavskiy (two pivots) */
+partition.yaroslavskiy ;
 ```
 
 ## Reference
 
   - https://kluedo.ub.uni-kl.de/frontdoor/index/index/docId/3463
-  - http://sorting.at
-
-***( forked from [js-sort](https://github.com/aureooms/js-sort) )***
