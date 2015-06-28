@@ -1,7 +1,8 @@
 [js-partition](http://aureooms.github.io/js-partition)
 ==
 
-Partitioning code bricks for JavaScript.
+Partitioning code bricks for JavaScript. Parent is
+[aureooms/js-sort](https://github.com/aureooms/js-sort).
 
 ```js
 let pivot = partition.hoare( compare.increasing , array , left , right ) ;
