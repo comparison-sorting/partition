@@ -3,7 +3,7 @@
  * HYP : i < j
  */
 
-export function ( compare, a, i, j ) {
+export function lomuto ( compare, a, i, j ) {
 
 	const p = a[i];
 	let k = i + 1;

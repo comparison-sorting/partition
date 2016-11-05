@@ -68,13 +68,13 @@ export function yaroslavskiy ( compare , a , i , j ) {
 
 	// Swap pivots to final place
 
-	const t = a[i] ;
+	const t1 = a[i] ;
 	a[i] = a[l] ;
-	a[l] = t ;
+	a[l] = t1 ;
 
-	t    = a[j] ;
+	const t2 = a[j] ;
 	a[j] = a[g] ;
-	a[g] =    t ;
+	a[g] = t2 ;
 
 	return [ l , g ] ;
 
