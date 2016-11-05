@@ -5,36 +5,34 @@
  * http://cs.stackexchange.com/a/24099/20711
  */
 
-var yaroslavskiy = function ( compare , a , i , j ) {
-
-	var p , q , g , k , l , t ;
+export function yaroslavskiy ( compare , a , i , j ) {
 
 	--j ;
 
 	// Choose outermost elements as pivots
 	if ( compare( a[i] , a[j] ) > 0 ) {
 
-		t    = a[i] ;
+		const t = a[i] ;
 		a[i] = a[j] ;
-		a[j] =    t ;
+		a[j] = t ;
 
 	}
 
-	p = a[i] ;
-	q = a[j] ;
+	const p = a[i] ;
+	const q = a[j] ;
 
 	// Partition a according to invariant below
-	l = i + 1 ;
-	g = j - 1 ;
-	k = l ;
+	let l = i + 1 ;
+	let g = j - 1 ;
+	let k = l ;
 
 	while ( k <= g ) {
 
 		if ( compare( p , a[k] ) > 0 ) {
 
-			t    = a[k] ;
+			const t = a[k] ;
 			a[k] = a[l] ;
-			a[l] =    t ;
+			a[l] = t ;
 
 			++l ;
 
@@ -46,16 +44,16 @@ var yaroslavskiy = function ( compare , a , i , j ) {
 				--g ;
 			}
 
-			t    = a[k] ;
+			const t = a[k] ;
 			a[k] = a[g] ;
-			a[g] =    t ;
+			a[g] = t ;
 			--g ;
 
 			if ( compare( p, a[k] ) > 0 ) {
 
-				t    = a[k] ;
+				const t = a[k] ;
 				a[k] = a[l] ;
-				a[l] =    t ;
+				a[l] = t ;
 				++l ;
 
 			}
@@ -70,9 +68,9 @@ var yaroslavskiy = function ( compare , a , i , j ) {
 
 	// Swap pivots to final place
 
-	t    = a[i] ;
+	const t = a[i] ;
 	a[i] = a[l] ;
-	a[l] =    t ;
+	a[l] = t ;
 
 	t    = a[j] ;
 	a[j] = a[g] ;
@@ -80,6 +78,4 @@ var yaroslavskiy = function ( compare , a , i , j ) {
 
 	return [ l , g ] ;
 
-} ;
-
-exports.yaroslavskiy = yaroslavskiy ;
+}

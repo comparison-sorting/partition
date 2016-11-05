@@ -3,12 +3,10 @@
  * HYP : i < j
  */
 
-var lomuto = function ( compare, a, i, j ) {
+export function ( compare, a, i, j ) {
 
-	var t, k, p;
-
-	p = a[i];
-	k = i + 1;
+	const p = a[i];
+	let k = i + 1;
 
 	--j;
 
@@ -16,7 +14,7 @@ var lomuto = function ( compare, a, i, j ) {
 
 		if ( compare( p, a[k] ) <= 0 ) {
 
-			t    = a[k];
+			const t = a[k];
 			a[k] = a[j];
 			a[j] = t;
 
@@ -33,6 +31,5 @@ var lomuto = function ( compare, a, i, j ) {
 	a[k-1] = p;
 
 	return k - 1;
-};
 
-exports.lomuto = lomuto;
+}

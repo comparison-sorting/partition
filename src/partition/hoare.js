@@ -3,12 +3,10 @@
  * HYP : i < j
  */
 
-var hoare = function ( compare , a , i , j ) {
+export function hoare ( compare , a , i , j ) {
 
-	var x , t , o ;
-
-	o = i ;
-	x = a[o] ;
+	const o = i ;
+	const x = a[o] ;
 
 	while ( true ) {
 
@@ -45,13 +43,10 @@ var hoare = function ( compare , a , i , j ) {
 
 		// invariant i < j
 
-		t    = a[i] ;
+		const t    = a[i] ;
 		a[i] = a[j] ;
 		a[j] =    t ;
 
 	}
 
-} ;
-
-exports.hoare = hoare ;
-exports.partition = hoare ;
+}

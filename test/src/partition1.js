@@ -1,40 +1,34 @@
+import test from 'ava' ;
 
-var util, array, random, compare, itertools, functools;
+import array from "aureooms-js-array" ;
+import random from "aureooms-js-random" ;
+import compare from "aureooms-js-compare" ;
+import * as itertools from "aureooms-js-itertools" ;
+import functools from "aureooms-js-functools" ;
 
-util = require( "util" );
-array = require( "aureooms-js-array" );
-random = require( "aureooms-js-random" );
-compare = require( "aureooms-js-compare" );
-itertools = require( "aureooms-js-itertools" );
-functools = require( "aureooms-js-functools" );
+import * as partition from "../../src" ;
 
-var check = function ( partitionname, method, ctor, n, comparename, compare ) {
+function check ( partitionname, method, ctor, n, comparename, compare ) {
 
-	var title;
+	const title = `${partitionname} (new ${ctor.name}(${n}), ${comparename})` ;
 
-	title = util.format("%s (new %s(%d), %s)", partitionname, ctor.name, n, comparename);
-
-	console.log( title );
-
-	test( title, function () {
-
-		var a ;
+	test( title, t => {
 
 		// SETUP ARRAY
-		a = new ctor(n);
+		const a = new ctor(n);
 		array.iota( a, 0, n, 0 );
 
 		// PARTITION ARRAY
 		random.shuffle( a, 0, n );
-		var p = method( compare, a, 0, n );
+		const p = method( compare, a, 0, n );
 
 		// TEST PREDICATE
 
-		deepEqual( partition.ispartitioned( compare , a , 0 , n , p ) , n , "check partitioned" ) ;
-		deepEqual( a.length, n, "check length a" );
+		t.is( partition.ispartitioned( compare , a , 0 , n , p ) , n , "check partitioned" ) ;
+		t.is( a.length, n, "check length a" );
 
 	} );
-};
+}
 
 itertools.exhaust( itertools.map(
 function ( args ) {

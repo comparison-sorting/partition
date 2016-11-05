@@ -4,7 +4,7 @@
  * Returns k the index of the first failed test.
  */
 
-let ispartitioned = function ( compare , array , left , right , p ) {
+export function ispartitioned ( compare , array , left , right , p ) {
 
 	for ( let k = left ; k < p ; ++k ) {
 
@@ -20,6 +20,4 @@ let ispartitioned = function ( compare , array , left , right , p ) {
 
 	return right ;
 
-} ;
-
-exports.ispartitioned = ispartitioned ;
+}
