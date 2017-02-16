@@ -8,7 +8,7 @@ Partitioning algorithms for JavaScript. Parent is
 let pivot = partition.hoare( compare.increasing , array , left , right ) ;
 ```
 
-[![NPM license](https://img.shields.io/npm/l/@aureooms/js-partition.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-partition/master/LICENSE)
+[![License](https://img.shields.io/github/license/aureooms/js-partition.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-partition/master/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-partition.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-partition)
 [![Build Status](https://img.shields.io/travis/aureooms/js-partition.svg?style=flat)](https://travis-ci.org/aureooms/js-partition)
 [![Coverage Status](https://img.shields.io/coveralls/aureooms/js-partition.svg?style=flat)](https://coveralls.io/r/aureooms/js-partition)
