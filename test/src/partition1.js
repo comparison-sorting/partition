@@ -1,10 +1,10 @@
 import test from 'ava' ;
 
-import array from "aureooms-js-array" ;
-import random from "aureooms-js-random" ;
-import compare from "aureooms-js-compare" ;
-import * as itertools from "aureooms-js-itertools" ;
-import functools from "aureooms-js-functools" ;
+import array from "@aureooms/js-array" ;
+import random from "@aureooms/js-random" ;
+import compare from "@aureooms/js-compare" ;
+import * as itertools from "@aureooms/js-itertools" ;
+import functools from "@aureooms/js-functools" ;
 
 import * as partition from "../../src" ;
 
