@@ -4,10 +4,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:aureooms-js-partition
+jspm install npm:@aureooms/js-partition
 ```
 
 ### npm
 ```terminal
-npm install aureooms-js-partition --save
+npm install @aureooms/js-partition --save
 ```

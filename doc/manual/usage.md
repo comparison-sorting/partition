@@ -8,7 +8,7 @@ import 'babel-polyfill' ;
 
 Then
 ```js
-const measure = require( 'aureooms-js-partition' ) ;
+const measure = require( '@aureooms/js-partition' ) ;
 // or
-import measure from 'aureooms-js-partition' ;
+import measure from '@aureooms/js-partition' ;
 ```

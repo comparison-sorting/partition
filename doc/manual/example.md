@@ -1,5 +1,5 @@
 ```js
-import compare from "aureooms-js-compare" ;
+import compare from "@aureooms/js-compare" ;
 
 /** hoare partitioning */
 let array = [ 3 , 4 , 1 , 9 , 0 ] ;
