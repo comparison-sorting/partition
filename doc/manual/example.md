@@ -1,3 +1,4 @@
+# Examples
 ```js
 import compare from "@aureooms/js-compare" ;
 
