@@ -1,4 +1,4 @@
-[js-partition](http://aureooms.github.io/js-partition)
+[js-partition](http://make-github-pseudonymous-again.github.io/js-partition)
 ==
 
 Partitioning algorithms for JavaScript. Parent is
@@ -20,7 +20,7 @@ let pivot = partition.hoare( compare.increasing , array , left , right ) ;
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-partition.svg)](https://codeclimate.com/github/aureooms/js-partition/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-partition/master.svg)](https://codecov.io/gh/aureooms/js-partition)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-partition.svg)](https://codeclimate.com/github/aureooms/js-partition/trends/technical_debt)
-[![Documentation](http://aureooms.github.io/js-partition/badge.svg)](http://aureooms.github.io/js-partition/source.html)
+[![Documentation](http://make-github-pseudonymous-again.github.io/js-partition/badge.svg)](http://make-github-pseudonymous-again.github.io/js-partition/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-partition)](https://bundlephobia.com/result?p=@aureooms/js-partition)
 
 ## Reference
