@@ -1,6 +1,6 @@
 import test from 'ava' ;
 
-import { increasing , decreasing } from "@aureooms/js-compare" ;
+import { increasing , decreasing } from "@total-order/primitive" ;
 
 import { ispartitioned } from "../../src" ;
 
@@ -8,8 +8,8 @@ function macro ( t , array , left , right , p , k1 , k2 ) {
 
 	const n = array.length ;
 
-	t.truthy( ispartitioned( increasing , array , left , right , p ) === k1 ) ;
-	t.truthy( ispartitioned( decreasing , array , left , right , p ) === k2 ) ;
+	t.true( ispartitioned( increasing , array , left , right , p ) === k1 ) ;
+	t.true( ispartitioned( decreasing , array , left , right , p ) === k2 ) ;
 
 	t.is( array.length , n ) ;
 

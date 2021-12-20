@@ -1,39 +1,45 @@
 import test from 'ava' ;
 
-import * as array from "@aureooms/js-array" ;
-import * as random from "@aureooms/js-random" ;
-import * as compare from "@aureooms/js-compare" ;
-import * as itertools from "@aureooms/js-itertools" ;
-import functools from "@aureooms/js-functools" ;
+import {_calloc} from '@array-like/alloc';
+import {iota} from '@array-like/fill';
+import {shuffle} from '@randomized/random';
+import {increasing, decreasing} from '@total-order/primitive';
+import {star} from "@functional-abstraction/functools" ;
+import {list} from '@iterable-iterator/list';
+import {map} from '@iterable-iterator/map';
+import {_chain as chain} from '@iterable-iterator/chain';
+import {exhaust} from '@iterable-iterator/consume';
+import {product} from '@set-theory/cartesian-product';
 
-import * as partition from "../../src" ;
+import {hoare, lomuto, ispartitioned} from "../../src" ;
 
 function check ( partitionname, method, ctor, n, comparename, compare ) {
 
 	const title = `${partitionname} (new ${ctor.name}(${n}), ${comparename})` ;
+	const calloc = _calloc(ctor);
 
 	test( title, t => {
 
 		// SETUP ARRAY
-		const a = new ctor(n);
-		array.iota( a, 0, n, 0 );
+		const a = calloc(n);
+		iota( a, 0, n, 0 );
 
 		// PARTITION ARRAY
-		random.shuffle( a, 0, n );
+		shuffle( a, 0, n );
 		const p = method( compare, a, 0, n );
 
 		// TEST PREDICATE
 
-		t.is( partition.ispartitioned( compare , a , 0 , n , p ) , n , "check partitioned" ) ;
+		t.is( ispartitioned( compare , a , 0 , n , p ) , n , "check partitioned" ) ;
 		t.is( a.length, n, "check length a" );
 
 	} );
 }
 
-itertools.exhaust( itertools.map(
+exhaust( map(
 function ( args ) {
 
-	functools.star( function ( partitionname, method, comparename, compare, size, type ) {
+	star( function ( partitionname, method, comparename, compare, size, type ) {
 
 		if ( type.BYTES_PER_ELEMENT && size > Math.pow( 2, type.BYTES_PER_ELEMENT * 8 ) ) {
 			return;
@@ -41,21 +47,21 @@ function ( args ) {
 
 		check( partitionname, method, type, size, comparename, compare );
 
-	}, itertools.list( itertools.chain( args ) ) ) ;
+	}, list( chain( args ) ) ) ;
 
 } ,
 
 
-itertools.product( [
+product( [
 
 [
-	[ "hoare", partition.hoare ],
-	[ "lomuto", partition.lomuto ]
+	[ "hoare", hoare ],
+	[ "lomuto", lomuto ]
 ],
 
 [
-	[ "increasing", compare.increasing ],
-	[ "decreasing", compare.decreasing ]
+	[ "increasing", increasing ],
+	[ "decreasing", decreasing ]
 ],
 
 [[1], [2], [10], [63], [64], [65]],
