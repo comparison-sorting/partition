@@ -8,10 +8,12 @@ import firstInversion from './firstInversion.js';
  * @param {ArrayLike} array
  * @param {number} left
  * @param {number} right
- * @param {number} p
+ * @param {number[]} pivots
+ * @param {number} pi
+ * @param {number} pj
  * @return {boolean}
  */
-const isPartitioned = (compare, array, left, right, p) =>
-	firstInversion(compare, array, left, right, p) === right;
+const isPartitioned = (compare, array, left, right, pivots, pi, pj) =>
+	firstInversion(compare, array, left, right, pivots, pi, pj) === right;
 
 export default isPartitioned;

@@ -28,7 +28,7 @@ function check(partitionname, method, ctor, n, comparename, compare) {
 
 		// TEST PREDICATE
 
-		t.true(isPartitioned(compare, a, 0, n, p), 'check partitioned');
+		t.true(isPartitioned(compare, a, 0, n, [p], 0, 1), 'check partitioned');
 		t.is(a.length, n, 'check length a');
 	});
 }
