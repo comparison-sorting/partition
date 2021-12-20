@@ -17,7 +17,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "@aureooms/js-partition"
+          "title": "@comparison-sorting/partition"
         },
         "test": {
           "type": "ava",

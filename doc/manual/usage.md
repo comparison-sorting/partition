@@ -9,7 +9,7 @@ import 'regenerator-runtime/runtime.js' ;
 
 Then
 ```js
-const measure = await import( '@aureooms/js-partition' ) ;
+const measure = await import( '@comparison-sorting/partition' ) ;
 // or
-import measure from '@aureooms/js-partition' ;
+import measure from '@comparison-sorting/partition' ;
 ```

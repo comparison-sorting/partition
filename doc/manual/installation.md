@@ -5,10 +5,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:@aureooms/js-partition
+jspm install npm:@comparison-sorting/partition
 ```
 
 ### npm
 ```terminal
-npm install @aureooms/js-partition --save
+npm install @comparison-sorting/partition --save
 ```

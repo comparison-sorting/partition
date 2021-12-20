@@ -1,16 +1,16 @@
 {
-  "name": "@aureooms/js-partition",
+  "name": "@comparison-sorting/partition",
   "description": "Partition algorithms for JavaScript",
   "version": "8.0.0",
   "license": "AGPL-3.0",
-  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
-  "homepage": "https://make-github-pseudonymous-again.github.io/js-partition",
+  "author": "make-github-pseudonymous-again",
+  "homepage": "https://comparison-sorting.github.io/partition",
   "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-partition",
+    "url": "https://github.com/comparison-sorting/partition",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-partition/issues"
+    "url": "https://github.com/comparison-sorting/partition/issues"
   },
   "keywords": [
     "hoare",
