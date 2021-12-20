@@ -6,7 +6,9 @@ Partitioning algorithms for JavaScript. Parent is
 [js-sorting](https://github.com/make-github-pseudonymous-again/js-sorting).
 
 ```js
-let pivot = partition.hoare( compare.increasing , array , left , right ) ;
+import {increasing} from '@total-order/primitive';
+import {hoare as partition} from '@comparison-sorting/partition';
+let pivot = partition( increasing , array , left , right ) ;
 ```
 
 [![License](https://img.shields.io/github/license/comparison-sorting/partition.svg)](https://raw.githubusercontent.com/comparison-sorting/partition/main/LICENSE)
