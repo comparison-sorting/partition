@@ -2,17 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="">
-  <title data-ice="title">Source | aureooms/js-partition API Document</title>
+  <base data-ice="baseUrl" href>
+  <title data-ice="title">Source | @comparison-sorting/partition</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
-  
-  
   <script src="script/manual.js"></script>
-<script data-ice="userScript" src="user/script/0-header.js"></script>
-<link data-ice="userStyle" rel="stylesheet" href="user/css/0-style.css">
-</head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Partition algorithms for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@comparison-sorting/partition"><meta property="twitter:description" content="Partition algorithms for JavaScript"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -20,8 +16,7 @@
   <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
-  <a href="test.html" data-ice="testLink">Test</a>
-  <a data-ice="repoURL" href="https://github.com/aureooms/js-partition.git" class="repo-url-github">Repository</a>
+  
   <div class="search-box">
   <span>
     <img src="./image/search.png">
@@ -29,21 +24,22 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-</header>
+<a style="position:relative; top:3px;" href="https://github.com/comparison-sorting/partition"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">partition</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hoare">hoare</a></span></span></li>
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#partition">partition</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hoare">hoare</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-lomuto">lomuto</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-yaroslavskiy">yaroslavskiy</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">utils</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ispartitioned">ispartitioned</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-firstInversion">firstInversion</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPartitioned">isPartitioned</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-whole">whole</a></span></span></li>
 </ul>
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1>Source <img data-ice="coverageBadge" src="./badge.svg"><span data-ice="totalCoverageCount" class="total-coverage-count">4/5</span></h1>
+<div class="content" data-ice="content"><h1>Source <img data-ice="coverageBadge" src="./badge.svg"><span data-ice="totalCoverageCount" class="total-coverage-count">5/6</span></h1>
 
 <table class="files-summary" data-ice="files" data-use-coverage="true">
   <thead>
@@ -62,72 +58,64 @@
       <td data-ice="filePath"><span><a href="file/src/index.js.html">src/index.js</a></span></td>
       <td data-ice="identifier" class="identifiers">-</td>
       <td class="coverage"><span data-ice="coverage">-</span></td>
-      <td style="display: none;" data-ice="size">56 byte</td>
-      <td style="display: none;" data-ice="lines">2</td>
-      <td style="display: none;" data-ice="updated">2016-11-07 20:31:35 (UTC)</td>
+      <td style="display: none;" data-ice="size">368 byte</td>
+      <td style="display: none;" data-ice="lines">6</td>
+      <td style="display: none;" data-ice="updated">2021-12-02 21:28:57 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/src/partition/hoare.js.html">src/partition/hoare.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-hoare">hoare</a></span></td>
       <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
-      <td style="display: none;" data-ice="size">543 byte</td>
-      <td style="display: none;" data-ice="lines">52</td>
-      <td style="display: none;" data-ice="updated">2016-11-07 20:31:35 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/src/partition/index.js.html">src/partition/index.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">-</span></td>
-      <td style="display: none;" data-ice="size">86 byte</td>
-      <td style="display: none;" data-ice="lines">3</td>
-      <td style="display: none;" data-ice="updated">2016-11-07 20:31:35 (UTC)</td>
+      <td style="display: none;" data-ice="size">640 byte</td>
+      <td style="display: none;" data-ice="lines">53</td>
+      <td style="display: none;" data-ice="updated">2021-12-02 21:28:57 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/src/partition/lomuto.js.html">src/partition/lomuto.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-lomuto">lomuto</a></span></td>
       <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
-      <td style="display: none;" data-ice="size">308 byte</td>
-      <td style="display: none;" data-ice="lines">35</td>
-      <td style="display: none;" data-ice="updated">2016-11-07 20:31:35 (UTC)</td>
+      <td style="display: none;" data-ice="size">455 byte</td>
+      <td style="display: none;" data-ice="lines">36</td>
+      <td style="display: none;" data-ice="updated">2021-12-02 21:28:57 (UTC)</td>
     </tr>
 <tr data-ice="file">
       <td data-ice="filePath"><span><a href="file/src/partition/yaroslavskiy.js.html">src/partition/yaroslavskiy.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-yaroslavskiy">yaroslavskiy</a></span></td>
       <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
-      <td style="display: none;" data-ice="size">980 byte</td>
-      <td style="display: none;" data-ice="lines">81</td>
-      <td style="display: none;" data-ice="updated">2016-11-07 20:31:35 (UTC)</td>
+      <td style="display: none;" data-ice="size">1079 byte</td>
+      <td style="display: none;" data-ice="lines">75</td>
+      <td style="display: none;" data-ice="updated">2021-12-02 21:28:57 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/src/utils/index.js.html">src/utils/index.js</a></span></td>
-      <td data-ice="identifier" class="identifiers">-</td>
-      <td class="coverage"><span data-ice="coverage">-</span></td>
-      <td style="display: none;" data-ice="size">60 byte</td>
-      <td style="display: none;" data-ice="lines">2</td>
-      <td style="display: none;" data-ice="updated">2016-11-07 20:31:35 (UTC)</td>
-    </tr>
-<tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/src/utils/ispartitioned.js.html">src/utils/ispartitioned.js</a></span></td>
-      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-ispartitioned">ispartitioned</a></span></td>
+      <td data-ice="filePath"><span><a href="file/src/utils/firstInversion.js.html">src/utils/firstInversion.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-firstInversion">firstInversion</a></span></td>
       <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
-      <td style="display: none;" data-ice="size">431 byte</td>
-      <td style="display: none;" data-ice="lines">23</td>
-      <td style="display: none;" data-ice="updated">2016-11-07 20:31:35 (UTC)</td>
+      <td style="display: none;" data-ice="size">576 byte</td>
+      <td style="display: none;" data-ice="lines">24</td>
+      <td style="display: none;" data-ice="updated">2021-12-02 21:28:57 (UTC)</td>
     </tr>
 <tr data-ice="file">
-      <td data-ice="filePath"><span><a href="file/src/utils/whole.js.html#errorLines=3">src/utils/whole.js</a></span></td>
+      <td data-ice="filePath"><span><a href="file/src/utils/isPartitioned.js.html">src/utils/isPartitioned.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-isPartitioned">isPartitioned</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">1/1</span></td>
+      <td style="display: none;" data-ice="size">444 byte</td>
+      <td style="display: none;" data-ice="lines">17</td>
+      <td style="display: none;" data-ice="updated">2021-12-02 21:28:57 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/src/utils/whole.js.html#errorLines=1">src/utils/whole.js</a></span></td>
       <td data-ice="identifier" class="identifiers"><span><a href="function/index.html#static-function-whole">whole</a></span></td>
       <td class="coverage"><span data-ice="coverage">0 %</span><span data-ice="coverageCount" class="coverage-count">0/1</span></td>
-      <td style="display: none;" data-ice="size">144 byte</td>
-      <td style="display: none;" data-ice="lines">11</td>
-      <td style="display: none;" data-ice="updated">2016-11-07 20:31:35 (UTC)</td>
+      <td style="display: none;" data-ice="size">117 byte</td>
+      <td style="display: none;" data-ice="lines">4</td>
+      <td style="display: none;" data-ice="updated">2021-12-02 21:28:57 (UTC)</td>
     </tr>
 </tbody>
 </table>
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.8)</span></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
 </footer>
 
 <script src="script/search_index.js"></script>

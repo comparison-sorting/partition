@@ -1,0 +1,1075 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "export {default as hoare} from './partition/hoare.js';\nexport {default as lomuto} from './partition/lomuto.js';\nexport {default as yaroslavskiy} from './partition/yaroslavskiy.js';\nexport {default as firstInversion} from './utils/firstInversion.js';\nexport {default as isPartitioned} from './utils/isPartitioned.js';\nexport {default as whole} from './utils/whole.js';\n",
+    "static": true,
+    "longname": "/home/runner/work/partition/partition/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
+    "name": "src/partition/hoare.js",
+    "content": "import assert from 'assert';\n\n/**\n * @param {Function} compare\n * @param {Array} a\n * @param {number} i\n * @param {number} j\n * @return {number}\n */\nconst hoare = (compare, a, i, j) => {\n\tassert(i < j);\n\n\tconst o = i;\n\tconst x = a[o];\n\n\twhile (true) {\n\t\twhile (true) {\n\t\t\t--j;\n\n\t\t\tif (i >= j) {\n\t\t\t\ta[o] = a[j];\n\t\t\t\ta[j] = x;\n\t\t\t\treturn j;\n\t\t\t}\n\n\t\t\tif (compare(x, a[j]) > 0) {\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\n\t\twhile (true) {\n\t\t\t++i;\n\n\t\t\tif (i >= j) {\n\t\t\t\ta[o] = a[j];\n\t\t\t\ta[j] = x;\n\t\t\t\treturn j;\n\t\t\t}\n\n\t\t\tif (compare(x, a[i]) < 0) {\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\n\t\t// Invariant i < j\n\n\t\tconst t = a[i];\n\t\ta[i] = a[j];\n\t\ta[j] = t;\n\t}\n};\n\nexport default hoare;\n",
+    "static": true,
+    "longname": "/home/runner/work/partition/partition/src/partition/hoare.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "hoare",
+    "memberof": "src/partition/hoare.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/partition/hoare.js~hoare",
+    "access": "public",
+    "export": true,
+    "importPath": "@comparison-sorting/partition/src/partition/hoare.js",
+    "importStyle": "hoare",
+    "description": "",
+    "lineNumber": 10,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "compare",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "i",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "j",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "file",
+    "name": "src/partition/lomuto.js",
+    "content": "import assert from 'assert';\n\n/**\n * @param {Function} compare\n * @param {Array} a\n * @param {number} i\n * @param {number} j\n * @return {number}\n */\nconst lomuto = (compare, a, i, j) => {\n\tassert(i < j);\n\n\tconst p = a[i];\n\tlet k = i + 1;\n\n\t--j;\n\n\twhile (k <= j) {\n\t\tif (compare(p, a[k]) <= 0) {\n\t\t\tconst t = a[k];\n\t\t\ta[k] = a[j];\n\t\t\ta[j] = t;\n\n\t\t\t--j;\n\t\t} else {\n\t\t\t++k;\n\t\t}\n\t}\n\n\ta[i] = a[k - 1];\n\ta[k - 1] = p;\n\n\treturn k - 1;\n};\n\nexport default lomuto;\n",
+    "static": true,
+    "longname": "/home/runner/work/partition/partition/src/partition/lomuto.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "lomuto",
+    "memberof": "src/partition/lomuto.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/partition/lomuto.js~lomuto",
+    "access": "public",
+    "export": true,
+    "importPath": "@comparison-sorting/partition/src/partition/lomuto.js",
+    "importStyle": "lomuto",
+    "description": "",
+    "lineNumber": 10,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "compare",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "i",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "j",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "src/partition/yaroslavskiy.js",
+    "content": "import assert from 'assert';\n\n/**\n * See http://cs.stackexchange.com/a/24099/20711\n *\n * @param {Function} compare\n * @param {Array} a\n * @param {number} i\n * @param {number} j\n * @return {[number, number]}\n */\nconst yaroslavskiy = (compare, a, i, j) => {\n\tassert(i < j);\n\t--j;\n\n\t// Choose outermost elements as pivots\n\tif (compare(a[i], a[j]) > 0) {\n\t\tconst t = a[i];\n\t\ta[i] = a[j];\n\t\ta[j] = t;\n\t}\n\n\tconst p = a[i];\n\tconst q = a[j];\n\n\t// Partition a according to invariant below\n\tlet l = i + 1;\n\tlet g = j - 1;\n\tlet k = l;\n\n\twhile (k <= g) {\n\t\tif (compare(p, a[k]) > 0) {\n\t\t\tconst t = a[k];\n\t\t\ta[k] = a[l];\n\t\t\ta[l] = t;\n\n\t\t\t++l;\n\t\t} else if (compare(q, a[k]) <= 0) {\n\t\t\twhile (compare(a[g], q) > 0 && k < g) {\n\t\t\t\t--g;\n\t\t\t}\n\n\t\t\tconst t = a[k];\n\t\t\ta[k] = a[g];\n\t\t\ta[g] = t;\n\t\t\t--g;\n\n\t\t\tif (compare(p, a[k]) > 0) {\n\t\t\t\tconst t = a[k];\n\t\t\t\ta[k] = a[l];\n\t\t\t\ta[l] = t;\n\t\t\t\t++l;\n\t\t\t}\n\t\t}\n\n\t\t++k;\n\t}\n\n\t--l;\n\t++g;\n\n\t// Swap pivots to final place\n\n\tconst t1 = a[i];\n\ta[i] = a[l];\n\ta[l] = t1;\n\n\tconst t2 = a[j];\n\ta[j] = a[g];\n\ta[g] = t2;\n\n\treturn [l, g];\n};\n\nexport default yaroslavskiy;\n",
+    "static": true,
+    "longname": "/home/runner/work/partition/partition/src/partition/yaroslavskiy.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "yaroslavskiy",
+    "memberof": "src/partition/yaroslavskiy.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/partition/yaroslavskiy.js~yaroslavskiy",
+    "access": "public",
+    "export": true,
+    "importPath": "@comparison-sorting/partition/src/partition/yaroslavskiy.js",
+    "importStyle": "yaroslavskiy",
+    "description": "See http://cs.stackexchange.com/a/24099/20711",
+    "lineNumber": 12,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "compare",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "i",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "j",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "[number, number]"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "src/utils/firstInversion.js",
+    "content": "/**\n * Checks whether range [left,right[ of array is partitioned according to pivot\n * p. Returns the index of the first inversion.\n *\n * @param {Function} compare\n * @param {ArrayLike} array\n * @param {number} left\n * @param {number} right\n * @param {number} p\n * @return {number}\n */\nconst firstInversion = (compare, array, left, right, p) => {\n\tfor (let k = left; k < p; ++k) {\n\t\tif (compare(array[k], array[p]) > 0) return k;\n\t}\n\n\tfor (let k = p + 1; k < right; ++k) {\n\t\tif (compare(array[k], array[p]) < 0) return k;\n\t}\n\n\treturn right;\n};\n\nexport default firstInversion;\n",
+    "static": true,
+    "longname": "/home/runner/work/partition/partition/src/utils/firstInversion.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "firstInversion",
+    "memberof": "src/utils/firstInversion.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/firstInversion.js~firstInversion",
+    "access": "public",
+    "export": true,
+    "importPath": "@comparison-sorting/partition/src/utils/firstInversion.js",
+    "importStyle": "firstInversion",
+    "description": "Checks whether range [left,right[ of array is partitioned according to pivot\np. Returns the index of the first inversion.",
+    "lineNumber": 12,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "compare",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "ArrayLike"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "left",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "right",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "name": "src/utils/isPartitioned.js",
+    "content": "import firstInversion from './firstInversion.js';\n\n/**\n * Checks whether range [left,right[ of array is partitioned according to pivot\n * p.\n *\n * @param {Function} compare\n * @param {ArrayLike} array\n * @param {number} left\n * @param {number} right\n * @param {number} p\n * @return {boolean}\n */\nconst isPartitioned = (compare, array, left, right, p) =>\n\tfirstInversion(compare, array, left, right, p) === right;\n\nexport default isPartitioned;\n",
+    "static": true,
+    "longname": "/home/runner/work/partition/partition/src/utils/isPartitioned.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "isPartitioned",
+    "memberof": "src/utils/isPartitioned.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/isPartitioned.js~isPartitioned",
+    "access": "public",
+    "export": true,
+    "importPath": "@comparison-sorting/partition/src/utils/isPartitioned.js",
+    "importStyle": "isPartitioned",
+    "description": "Checks whether range [left,right[ of array is partitioned according to pivot\np.",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "compare",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "ArrayLike"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "left",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "right",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "p",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "src/utils/whole.js",
+    "content": "const whole = (partition) => (compare, array) =>\n\tpartition(compare, array, 0, array.length);\n\nexport default whole;\n",
+    "static": true,
+    "longname": "/home/runner/work/partition/partition/src/utils/whole.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "whole",
+    "memberof": "src/utils/whole.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/whole.js~whole",
+    "access": "public",
+    "export": true,
+    "importPath": "@comparison-sorting/partition/src/utils/whole.js",
+    "importStyle": "whole",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "partition",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "kind": "index",
+    "content": ":cake:\n[@comparison-sorting/partition](https://comparison-sorting.github.io/partition)\n==\n\nPartitioning algorithms for JavaScript. Parent is\n[js-sorting](https://github.com/make-github-pseudonymous-again/js-sorting).\n\n```js\nimport {increasing} from '@total-order/primitive';\nimport {hoare as partition} from '@comparison-sorting/partition';\nlet pivot = partition( increasing , array , left , right ) ;\n```\n\n[![License](https://img.shields.io/github/license/comparison-sorting/partition.svg)](https://raw.githubusercontent.com/comparison-sorting/partition/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@comparison-sorting/partition.svg)](https://www.npmjs.org/package/@comparison-sorting/partition)\n[![Tests](https://img.shields.io/github/workflow/status/comparison-sorting/partition/ci:test?event=push&label=tests)](https://github.com/comparison-sorting/partition/actions/workflows/ci:test.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/librariesio/github/comparison-sorting/partition.svg)](https://github.com/comparison-sorting/partition/network/dependencies)\n[![GitHub issues](https://img.shields.io/github/issues/comparison-sorting/partition.svg)](https://github.com/comparison-sorting/partition/issues)\n[![Downloads](https://img.shields.io/npm/dm/@comparison-sorting/partition.svg)](https://www.npmjs.org/package/@comparison-sorting/partition)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/comparison-sorting/partition.svg)](https://codeclimate.com/github/comparison-sorting/partition/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/comparison-sorting/partition.svg)](https://codeclimate.com/github/comparison-sorting/partition/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/comparison-sorting/partition/main.svg)](https://codecov.io/gh/comparison-sorting/partition)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/comparison-sorting/partition.svg)](https://codeclimate.com/github/comparison-sorting/partition/trends/technical_debt)\n[![Documentation](https://comparison-sorting.github.io/partition/badge.svg)](https://comparison-sorting.github.io/partition/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@comparison-sorting/partition)](https://bundlephobia.com/result?p=@comparison-sorting/partition)\n\n## :scroll: Reference\n\n  - https://kluedo.ub.uni-kl.de/frontdoor/index/index/docId/3463\n",
+    "longname": "/home/runner/work/partition/partition/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@comparison-sorting/partition\",\n  \"description\": \"Partition algorithms for JavaScript\",\n  \"version\": \"9.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://comparison-sorting.github.io/partition\",\n  \"repository\": {\n    \"url\": \"https://github.com/comparison-sorting/partition\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/comparison-sorting/partition/issues\"\n  },\n  \"keywords\": [\n    \"hoare\",\n    \"javascript\",\n    \"js\",\n    \"lomuto\",\n    \"partition\",\n    \"yaroslavskiy\"\n  ],\n  \"sideEffects\": false,\n  \"type\": \"module\",\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.cjs\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.cjs\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:build\": \"npm run build\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@array-like/alloc\": \"^0.0.1\",\n    \"@array-like/fill\": \"^0.0.1\",\n    \"@babel/core\": \"7.16.5\",\n    \"@babel/preset-env\": \"7.16.5\",\n    \"@babel/register\": \"7.16.5\",\n    \"@commitlint/cli\": \"15.0.0\",\n    \"@functional-abstraction/functools\": \"^3.0.2\",\n    \"@iterable-iterator/chain\": \"^2.0.1\",\n    \"@iterable-iterator/consume\": \"^1.0.1\",\n    \"@iterable-iterator/list\": \"^1.0.1\",\n    \"@iterable-iterator/map\": \"^1.0.1\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"@randomized/random\": \"^4.0.0\",\n    \"@set-theory/cartesian-product\": \"^2.0.2\",\n    \"@total-order/primitive\": \"^1.0.1\",\n    \"ava\": \"^3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.2.0\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.10.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"7.0.4\",\n    \"lint-staged\": \"12.1.3\",\n    \"microbundle\": \"0.14.2\",\n    \"np\": \"7.6.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.9\",\n    \"xo\": \"0.47.0\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\"\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\",\n      \"camelcase\": \"off\",\n      \"unicorn/prevent-abbreviations\": \"off\",\n      \"no-constant-condition\": \"off\",\n      \"unicorn/prefer-node-protocol\": \"off\",\n      \"unicorn/prefer-math-trunc\": \"off\",\n      \"unicorn/no-new-array\": \"off\",\n      \"no-negated-condition\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/partition/partition/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": false,
+    "content": null,
+    "longname": "",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/partition/partition/doc/manual/overview.md",
+    "name": "./doc/manual/overview.md",
+    "content": "# Overview\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/partition/partition/doc/manual/installation.md",
+    "name": "./doc/manual/installation.md",
+    "content": "# Installation\nCan be managed using\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install npm:@comparison-sorting/partition\n```\n\n### npm\n```terminal\nnpm install @comparison-sorting/partition --save\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/partition/partition/doc/manual/usage.md",
+    "name": "./doc/manual/usage.md",
+    "content": "# Usage\nThe code needs a ES2015+ polyfill to work, for example\n[regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).\n```js\nawait import( 'regenerator-runtime/runtime.js' ) ;\n// or\nimport 'regenerator-runtime/runtime.js' ;\n```\n\nThen\n```js\nconst measure = await import( '@comparison-sorting/partition' ) ;\n// or\nimport measure from '@comparison-sorting/partition' ;\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/partition/partition/doc/manual/example.md",
+    "name": "./doc/manual/example.md",
+    "content": "# Examples\n```js\nimport {increasing} from '@total-order/primitive';\nimport * as partition from '@comparison-sorting/partition';\n\n/** hoare partitioning */\nlet array = [ 3 , 4 , 1 , 9 , 0 ];\nlet pivot = partition.hoare( increasing , array , 0 , array.length );\npivot ; // 2\narray ; // [ 1 , 0 , 3 , 9 , 4 ]\n\n// but also\n\n/** lomuto partitioning */\npartition.lomuto ;\n/** yaroslavskiy (two pivots) */\npartition.yaroslavskiy ;\n```\n",
+    "static": true,
+    "access": "public"
+  }
+]

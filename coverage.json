@@ -1,14 +1,9 @@
 {
-  "coverage": "80%",
-  "expectCount": 5,
-  "actualCount": 4,
+  "coverage": "83.33%",
+  "expectCount": 6,
+  "actualCount": 5,
   "files": {
     "src/partition/hoare.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
-    "src/utils/ispartitioned.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
@@ -18,17 +13,27 @@
       "actualCount": 1,
       "undocumentLines": []
     },
-    "src/utils/whole.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
-    },
     "src/partition/yaroslavskiy.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
+    },
+    "src/utils/firstInversion.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/isPartitioned.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/whole.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
     }
   }
 }
