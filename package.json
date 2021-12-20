@@ -20,6 +20,7 @@
     "partition",
     "yaroslavskiy"
   ],
+  "sideEffects": false,
   "main": "lib/index.js",
   "files": [
     "lib"
