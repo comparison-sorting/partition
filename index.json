@@ -809,7 +809,7 @@
     "__docId__": 55,
     "kind": "file",
     "name": "src/utils/firstInversion.js",
-    "content": "/**\n * Checks whether range [left,right[ of array is partitioned according to pivot\n * p. Returns the index of the first inversion.\n *\n * @param {Function} compare\n * @param {ArrayLike} array\n * @param {number} left\n * @param {number} right\n * @param {number} p\n * @return {number}\n */\nconst firstInversion = (compare, array, left, right, p) => {\n\tfor (let k = left; k < p; ++k) {\n\t\tif (compare(array[k], array[p]) > 0) return k;\n\t}\n\n\tfor (let k = p + 1; k < right; ++k) {\n\t\tif (compare(array[k], array[p]) < 0) return k;\n\t}\n\n\treturn right;\n};\n\nexport default firstInversion;\n",
+    "content": "/**\n * Checks whether range [left,right[ of array is partitioned according to pivot\n * p. Returns the index of the first inversion.\n *\n * @param {Function} compare\n * @param {ArrayLike} array\n * @param {number} left\n * @param {number} right\n * @param {number[]} pivots\n * @param {number} pi\n * @param {number} pj\n * @return {number}\n */\nconst firstInversion = (compare, array, left, right, pivots, pi, pj) => {\n\tlet p = pivots[pi];\n\tlet x = array[p];\n\tfor (let k = left; k < p; ++k) {\n\t\tif (compare(array[k], x) > 0) return k;\n\t}\n\n\twhile (++pi < pj) {\n\t\tconst q = pivots[pi];\n\t\tconst y = array[q];\n\t\tfor (let k = p + 1; k < q; ++k) {\n\t\t\tif (compare(array[k], x) < 0) return k;\n\t\t\tif (compare(array[k], y) > 0) return k;\n\t\t}\n\n\t\tp = q;\n\t\tx = y;\n\t}\n\n\tfor (let k = p + 1; k < right; ++k) {\n\t\tif (compare(array[k], x) < 0) return k;\n\t}\n\n\treturn right;\n};\n\nexport default firstInversion;\n",
     "static": true,
     "longname": "/home/runner/work/partition/partition/src/utils/firstInversion.js",
     "access": "public",
@@ -830,93 +830,6 @@
     "importPath": "@comparison-sorting/partition/src/utils/firstInversion.js",
     "importStyle": "firstInversion",
     "description": "Checks whether range [left,right[ of array is partitioned according to pivot\np. Returns the index of the first inversion.",
-    "lineNumber": 12,
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "Function"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "compare",
-        "description": ""
-      },
-      {
-        "nullable": null,
-        "types": [
-          "ArrayLike"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "array",
-        "description": ""
-      },
-      {
-        "nullable": null,
-        "types": [
-          "number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "left",
-        "description": ""
-      },
-      {
-        "nullable": null,
-        "types": [
-          "number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "right",
-        "description": ""
-      },
-      {
-        "nullable": null,
-        "types": [
-          "number"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "p",
-        "description": ""
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "number"
-      ],
-      "spread": false,
-      "description": ""
-    }
-  },
-  {
-    "__docId__": 57,
-    "kind": "file",
-    "name": "src/utils/isPartitioned.js",
-    "content": "import firstInversion from './firstInversion.js';\n\n/**\n * Checks whether range [left,right[ of array is partitioned according to pivot\n * p.\n *\n * @param {Function} compare\n * @param {ArrayLike} array\n * @param {number} left\n * @param {number} right\n * @param {number} p\n * @return {boolean}\n */\nconst isPartitioned = (compare, array, left, right, p) =>\n\tfirstInversion(compare, array, left, right, p) === right;\n\nexport default isPartitioned;\n",
-    "static": true,
-    "longname": "/home/runner/work/partition/partition/src/utils/isPartitioned.js",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 58,
-    "kind": "function",
-    "name": "isPartitioned",
-    "memberof": "src/utils/isPartitioned.js",
-    "generator": false,
-    "async": false,
-    "static": true,
-    "longname": "src/utils/isPartitioned.js~isPartitioned",
-    "access": "public",
-    "export": true,
-    "importPath": "@comparison-sorting/partition/src/utils/isPartitioned.js",
-    "importStyle": "isPartitioned",
-    "description": "Checks whether range [left,right[ of array is partitioned according to pivot\np.",
     "lineNumber": 14,
     "params": [
       {
@@ -962,11 +875,138 @@
       {
         "nullable": null,
         "types": [
+          "number[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pivots",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
           "number"
         ],
         "spread": false,
         "optional": false,
-        "name": "p",
+        "name": "pi",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pj",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "name": "src/utils/isPartitioned.js",
+    "content": "import firstInversion from './firstInversion.js';\n\n/**\n * Checks whether range [left,right[ of array is partitioned according to pivot\n * p.\n *\n * @param {Function} compare\n * @param {ArrayLike} array\n * @param {number} left\n * @param {number} right\n * @param {number[]} pivots\n * @param {number} pi\n * @param {number} pj\n * @return {boolean}\n */\nconst isPartitioned = (compare, array, left, right, pivots, pi, pj) =>\n\tfirstInversion(compare, array, left, right, pivots, pi, pj) === right;\n\nexport default isPartitioned;\n",
+    "static": true,
+    "longname": "/home/runner/work/partition/partition/src/utils/isPartitioned.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "isPartitioned",
+    "memberof": "src/utils/isPartitioned.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/isPartitioned.js~isPartitioned",
+    "access": "public",
+    "export": true,
+    "importPath": "@comparison-sorting/partition/src/utils/isPartitioned.js",
+    "importStyle": "isPartitioned",
+    "description": "Checks whether range [left,right[ of array is partitioned according to pivot\np.",
+    "lineNumber": 16,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "compare",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "ArrayLike"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "array",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "left",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "right",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pivots",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pi",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pj",
         "description": ""
       }
     ],
@@ -1026,7 +1066,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@comparison-sorting/partition\",\n  \"description\": \"Partition algorithms for JavaScript\",\n  \"version\": \"9.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://comparison-sorting.github.io/partition\",\n  \"repository\": {\n    \"url\": \"https://github.com/comparison-sorting/partition\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/comparison-sorting/partition/issues\"\n  },\n  \"keywords\": [\n    \"hoare\",\n    \"javascript\",\n    \"js\",\n    \"lomuto\",\n    \"partition\",\n    \"yaroslavskiy\"\n  ],\n  \"sideEffects\": false,\n  \"type\": \"module\",\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.cjs\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.cjs\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:build\": \"npm run build\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@array-like/alloc\": \"^0.0.1\",\n    \"@array-like/fill\": \"^0.0.1\",\n    \"@babel/core\": \"7.16.5\",\n    \"@babel/preset-env\": \"7.16.5\",\n    \"@babel/register\": \"7.16.5\",\n    \"@commitlint/cli\": \"15.0.0\",\n    \"@functional-abstraction/functools\": \"^3.0.2\",\n    \"@iterable-iterator/chain\": \"^2.0.1\",\n    \"@iterable-iterator/consume\": \"^1.0.1\",\n    \"@iterable-iterator/list\": \"^1.0.1\",\n    \"@iterable-iterator/map\": \"^1.0.1\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"@randomized/random\": \"^4.0.0\",\n    \"@set-theory/cartesian-product\": \"^2.0.2\",\n    \"@total-order/primitive\": \"^1.0.1\",\n    \"ava\": \"^3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.2.0\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.10.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"7.0.4\",\n    \"lint-staged\": \"12.1.3\",\n    \"microbundle\": \"0.14.2\",\n    \"np\": \"7.6.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.9\",\n    \"xo\": \"0.47.0\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\"\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\",\n      \"camelcase\": \"off\",\n      \"unicorn/prevent-abbreviations\": \"off\",\n      \"no-constant-condition\": \"off\",\n      \"unicorn/prefer-node-protocol\": \"off\",\n      \"unicorn/prefer-math-trunc\": \"off\",\n      \"unicorn/no-new-array\": \"off\",\n      \"no-negated-condition\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "content": "{\n  \"name\": \"@comparison-sorting/partition\",\n  \"description\": \"Partition algorithms for JavaScript\",\n  \"version\": \"10.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://comparison-sorting.github.io/partition\",\n  \"repository\": {\n    \"url\": \"https://github.com/comparison-sorting/partition\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/comparison-sorting/partition/issues\"\n  },\n  \"keywords\": [\n    \"hoare\",\n    \"javascript\",\n    \"js\",\n    \"lomuto\",\n    \"partition\",\n    \"yaroslavskiy\"\n  ],\n  \"sideEffects\": false,\n  \"type\": \"module\",\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.cjs\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.cjs\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:build\": \"npm run build\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {},\n  \"devDependencies\": {\n    \"@array-like/alloc\": \"^0.0.1\",\n    \"@array-like/fill\": \"^0.0.1\",\n    \"@babel/core\": \"7.16.5\",\n    \"@babel/preset-env\": \"7.16.5\",\n    \"@babel/register\": \"7.16.5\",\n    \"@commitlint/cli\": \"15.0.0\",\n    \"@functional-abstraction/functools\": \"^3.0.2\",\n    \"@iterable-iterator/chain\": \"^2.0.1\",\n    \"@iterable-iterator/consume\": \"^1.0.1\",\n    \"@iterable-iterator/list\": \"^1.0.1\",\n    \"@iterable-iterator/map\": \"^1.0.1\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"@randomized/random\": \"^4.0.0\",\n    \"@set-theory/cartesian-product\": \"^2.0.2\",\n    \"@total-order/primitive\": \"^1.0.1\",\n    \"ava\": \"^3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.2.0\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.10.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"7.0.4\",\n    \"lint-staged\": \"12.1.3\",\n    \"microbundle\": \"0.14.2\",\n    \"np\": \"7.6.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.9\",\n    \"xo\": \"0.47.0\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\"\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\",\n      \"camelcase\": \"off\",\n      \"unicorn/prevent-abbreviations\": \"off\",\n      \"no-constant-condition\": \"off\",\n      \"unicorn/prefer-node-protocol\": \"off\",\n      \"unicorn/prefer-math-trunc\": \"off\",\n      \"unicorn/no-new-array\": \"off\",\n      \"no-negated-condition\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
     "longname": "/home/runner/work/partition/partition/package.json",
     "name": "package.json",
     "static": true,
