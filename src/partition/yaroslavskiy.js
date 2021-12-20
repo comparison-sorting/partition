@@ -1,10 +1,16 @@
-/**
- * HYP : i < j
- *
- * http://cs.stackexchange.com/a/24099/20711
- */
+import assert from 'assert';
 
-export function yaroslavskiy(compare, a, i, j) {
+/**
+ * See http://cs.stackexchange.com/a/24099/20711
+ *
+ * @param {Function} compare
+ * @param {Array} a
+ * @param {number} i
+ * @param {number} j
+ * @return {[number, number]}
+ */
+const yaroslavskiy = (compare, a, i, j) => {
+	assert(i < j);
 	--j;
 
 	// Choose outermost elements as pivots
@@ -64,4 +70,6 @@ export function yaroslavskiy(compare, a, i, j) {
 	a[g] = t2;
 
 	return [l, g];
-}
+};
+
+export default yaroslavskiy;

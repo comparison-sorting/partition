@@ -1,8 +1,15 @@
-/**
- * HYP : i < j
- */
+import assert from 'assert';
 
-export function hoare(compare, a, i, j) {
+/**
+ * @param {Function} compare
+ * @param {Array} a
+ * @param {number} i
+ * @param {number} j
+ * @return {number}
+ */
+const hoare = (compare, a, i, j) => {
+	assert(i < j);
+
 	const o = i;
 	const x = a[o];
 
@@ -41,4 +48,6 @@ export function hoare(compare, a, i, j) {
 		a[i] = a[j];
 		a[j] = t;
 	}
-}
+};
+
+export default hoare;

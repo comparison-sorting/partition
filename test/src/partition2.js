@@ -11,7 +11,7 @@ import {_chain as chain} from '@iterable-iterator/chain';
 import {exhaust} from '@iterable-iterator/consume';
 import {product} from '@set-theory/cartesian-product';
 
-import {ispartitioned, yaroslavskiy} from '../../src/index.js';
+import {isPartitioned, yaroslavskiy} from '../../src/index.js';
 
 function check(partitionname, method, ctor, n, comparename, compare) {
 	const title = `${partitionname} (new ${ctor.name}(${n}), ${comparename})`;
@@ -32,8 +32,8 @@ function check(partitionname, method, ctor, n, comparename, compare) {
 		// TEST PREDICATE
 
 		t.true(p <= q, 'check p <= q');
-		t.is(ispartitioned(compare, a, 0, n, p), n, 'check partitioned p');
-		t.is(ispartitioned(compare, a, 0, n, q), n, 'check partitioned q');
+		t.true(isPartitioned(compare, a, 0, n, p), 'check partitioned p');
+		t.true(isPartitioned(compare, a, 0, n, q), 'check partitioned q');
 		t.is(a.length, n, 'check length a');
 	});
 }

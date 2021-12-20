@@ -1,8 +1,15 @@
-/**
- * HYP : i < j
- */
+import assert from 'assert';
 
-export function lomuto(compare, a, i, j) {
+/**
+ * @param {Function} compare
+ * @param {Array} a
+ * @param {number} i
+ * @param {number} j
+ * @return {number}
+ */
+const lomuto = (compare, a, i, j) => {
+	assert(i < j);
+
 	const p = a[i];
 	let k = i + 1;
 
@@ -24,4 +31,6 @@ export function lomuto(compare, a, i, j) {
 	a[k - 1] = p;
 
 	return k - 1;
-}
+};
+
+export default lomuto;

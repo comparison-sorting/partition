@@ -1,5 +1,4 @@
-export function whole(partition) {
-	return function (compare, array) {
-		return partition(compare, array, 0, array.length);
-	};
-}
+const whole = (partition) => (compare, array) =>
+	partition(compare, array, 0, array.length);
+
+export default whole;
