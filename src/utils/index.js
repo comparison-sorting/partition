@@ -1,2 +1,2 @@
-export * from './ispartitioned' ;
-export * from './whole' ;
+export * from './ispartitioned.js' ;
+export * from './whole.js' ;

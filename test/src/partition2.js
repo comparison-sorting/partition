@@ -11,7 +11,7 @@ import {_chain as chain} from '@iterable-iterator/chain';
 import {exhaust} from '@iterable-iterator/consume';
 import {product} from '@set-theory/cartesian-product';
 
-import {ispartitioned, yaroslavskiy} from "../../src" ;
+import {ispartitioned, yaroslavskiy} from '../../src/index.js' ;
 
 function check ( partitionname, method, ctor, n, comparename, compare ) {
 

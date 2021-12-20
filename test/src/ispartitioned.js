@@ -2,7 +2,7 @@ import test from 'ava' ;
 
 import { increasing , decreasing } from "@total-order/primitive" ;
 
-import { ispartitioned } from "../../src" ;
+import { ispartitioned } from '../../src/index.js' ;
 
 function macro ( t , array , left , right , p , k1 , k2 ) {
 

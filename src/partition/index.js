@@ -1,3 +1,3 @@
-export * from './hoare' ;
-export * from './lomuto' ;
-export * from './yaroslavskiy' ;
+export * from './hoare.js' ;
+export * from './lomuto.js' ;
+export * from './yaroslavskiy.js' ;
