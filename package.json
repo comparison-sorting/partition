@@ -67,7 +67,7 @@
     "@array-like/alloc": "0.0.1",
     "@array-like/fill": "0.0.1",
     "@babel/core": "7.22.1",
-    "@babel/preset-env": "7.22.2",
+    "@babel/preset-env": "7.22.4",
     "@babel/register": "7.21.0",
     "@commitlint/cli": "17.6.5",
     "@functional-abstraction/functools": "3.0.2",
