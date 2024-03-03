@@ -13,7 +13,7 @@ let pivot = partition( increasing , array , left , right ) ;
 
 [![License](https://img.shields.io/github/license/comparison-sorting/partition.svg)](https://raw.githubusercontent.com/comparison-sorting/partition/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@comparison-sorting/partition.svg)](https://www.npmjs.org/package/@comparison-sorting/partition)
-[![Tests](https://img.shields.io/github/workflow/status/comparison-sorting/partition/ci:test?event=push&label=tests)](https://github.com/comparison-sorting/partition/actions/workflows/ci:test.yml?query=branch:main)
+[![Tests](https://img.shields.io/github/workflow/status/comparison-sorting/partition/ci:cover?event=push&label=tests)](https://github.com/comparison-sorting/partition/actions/workflows/ci:cover.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/comparison-sorting/partition.svg)](https://github.com/comparison-sorting/partition/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/comparison-sorting/partition.svg)](https://github.com/comparison-sorting/partition/issues)
 [![Downloads](https://img.shields.io/npm/dm/@comparison-sorting/partition.svg)](https://www.npmjs.org/package/@comparison-sorting/partition)
