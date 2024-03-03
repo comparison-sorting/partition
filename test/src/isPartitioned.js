@@ -2,7 +2,7 @@ import test from 'ava';
 
 import {increasing, decreasing} from '@total-order/primitive';
 
-import {isPartitioned, firstInversion} from '../../src/index.js';
+import {isPartitioned, firstInversion} from '#module';
 
 const macro = (t, array, left, right, p, k1, k2) => {
 	const n = array.length;

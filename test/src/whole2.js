@@ -11,7 +11,7 @@ import {_chain as chain} from '@iterable-iterator/chain';
 import {exhaust} from '@iterable-iterator/consume';
 import {product} from '@set-theory/cartesian-product';
 
-import {isPartitioned, yaroslavskiy, whole} from '../../src/index.js';
+import {isPartitioned, yaroslavskiy, whole} from '#module';
 
 function check(partitionname, method, ctor, n, comparename, compare) {
 	const title = `whole ${partitionname} (new ${ctor.name}(${n}), ${comparename})`;
