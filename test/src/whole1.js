@@ -2,14 +2,14 @@ import test from 'ava';
 
 import {_calloc} from '@array-like/alloc';
 import {iota} from '@array-like/fill';
-import {shuffle} from '@randomized/random';
-import {increasing, decreasing} from '@total-order/primitive';
 import {star} from '@functional-abstraction/functools';
-import {list} from '@iterable-iterator/list';
-import {map} from '@iterable-iterator/map';
 import {_chain as chain} from '@iterable-iterator/chain';
 import {exhaust} from '@iterable-iterator/consume';
+import {list} from '@iterable-iterator/list';
+import {map} from '@iterable-iterator/map';
+import {shuffle} from '@randomized/random';
 import {product} from '@set-theory/cartesian-product';
+import {increasing, decreasing} from '@total-order/primitive';
 
 import {hoare, lomuto, isPartitioned, whole} from '#module';
 
@@ -38,16 +38,19 @@ function check(partitionname, method, ctor, n, comparename, compare) {
 exhaust(
 	map(
 		function (args) {
-			star(function (partitionname, method, comparename, compare, size, type) {
-				if (
-					type.BYTES_PER_ELEMENT &&
-					size > 2 ** (type.BYTES_PER_ELEMENT * 8)
-				) {
-					return;
-				}
+			star(
+				function (partitionname, method, comparename, compare, size, type) {
+					if (
+						type.BYTES_PER_ELEMENT &&
+						size > 2 ** (type.BYTES_PER_ELEMENT * 8)
+					) {
+						return;
+					}
 
-				check(partitionname, method, type, size, comparename, compare);
-			}, list(chain(args)));
+					check(partitionname, method, type, size, comparename, compare);
+				},
+				list(chain(args)),
+			);
 		},
 
 		product(
