@@ -68,7 +68,6 @@
     "@array-like/fill": "0.0.1",
     "@babel/core": "7.24.0",
     "@babel/preset-env": "7.24.0",
-    "@babel/register": "7.23.7",
     "@commitlint/cli": "19.0.3",
     "@functional-abstraction/functools": "3.0.2",
     "@iterable-iterator/chain": "2.0.1",
@@ -76,6 +75,7 @@
     "@iterable-iterator/list": "1.0.1",
     "@iterable-iterator/map": "1.0.1",
     "@js-library/commitlint-config": "0.0.4",
+    "@node-loader/babel": "2.0.1",
     "@randomized/random": "4.1.0",
     "@set-theory/cartesian-product": "2.0.2",
     "@total-order/primitive": "1.0.1",
@@ -102,22 +102,16 @@
     "files": [
       "test/src/**/*"
     ],
+    "nodeArguments": [
+      "--experimental-loader=@node-loader/babel"
+    ],
     "require": [
-      "regenerator-runtime/runtime",
-      "@babel/register"
+      "regenerator-runtime/runtime"
     ],
     "timeout": "1m"
   },
   "babel": {
     "sourceMaps": true,
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": "current node"
-        }
-      ]
-    ],
     "plugins": [
       [
         "transform-remove-console",
