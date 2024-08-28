@@ -75,7 +75,7 @@
     "@array-like/fill": "0.0.1",
     "@babel/core": "7.25.2",
     "@babel/preset-env": "7.25.4",
-    "@commitlint/cli": "19.4.0",
+    "@commitlint/cli": "19.4.1",
     "@functional-abstraction/functools": "3.0.2",
     "@iterable-iterator/chain": "2.0.1",
     "@iterable-iterator/consume": "1.0.1",
